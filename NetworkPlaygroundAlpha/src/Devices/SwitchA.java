@@ -14,16 +14,6 @@ import java.util.HashMap;
 public class SwitchA implements Device {
     
     private String hostName;
-//    /*
-//    map interface with the neighbouring devices 9
-//    */
-//    HashMap<String, Device> neighbours = new HashMap<>();
-//    
-//    /*
-//    maps mac address to interface 
-//    */
-//    HashMap<Long, String> switchPort = new HashMap<>();
-//    
     
     /*
     when sending, map addresss to port
@@ -61,12 +51,15 @@ public class SwitchA implements Device {
     */
     public void send(Data data, Port exitPort) {
         exitPort.pass(data);
-        return true;
     }
 
     @Override
     public String getName() {
         return hostName;
+    }
+    
+    public static void main(String[] args) {
+        System.out.println("test");
     }
     
 }

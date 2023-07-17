@@ -1,0 +1,42 @@
+NetworkPlaygroundAlpha draft
+
+public void main () {
+	Device r1 = new Router();
+	router.setIp("g0/0", "ip");
+	router.setIp("g0/1", "ip");
+	// router update routing table
+
+	Device s1 = new Switch();
+	Device s2 = new Switch();
+
+	Device pc1 = new PC();
+	pc1.setIpv4("ipv4");
+	Device pc2 = new PC();
+	pc1.setIpv4("ipv4");
+	Device pc3 = new PC();
+	pc1.setIpv4("ipv4");
+	// mac address generated randomly
+	// set hostname, 
+
+	connect(s1.port("fa0/1"), pc1.ether("eth0"));
+	connect(s2.port("fa0/1"), pc2.ether("eth0");
+	connect(s2.port("fa0/2), pc3.ether("eth0"));
+	// in case the port is taken
+
+	// function to detach stuff
+	detach(s3, pc3);
+
+
+
+	pc1.ping("routerInterface");
+
+	/*
+	for the first ping, mac learning happens on both switches
+	*/
+
+	pc1.interupt();
+	pc1.ping("ipPc2");
+	pc1.interupt();
+}
+
+

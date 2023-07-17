@@ -4,13 +4,15 @@
  */
 package Devices;
 
+import IP.IPV4;
+
 /**
  *
  * @author jad
  */
 public class Port {
     
-    long ipv4;
+    IPV4 ipv4;
     long toIpAddress;
     String id;
     Port toPort;
