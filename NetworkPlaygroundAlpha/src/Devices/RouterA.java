@@ -52,4 +52,10 @@ public class RouterA implements Device {
         port.ipv4 = new IPV4(ipv4, subnet);
     }
     
+    public void shutdown(String intId, boolean shutdown) {
+        if (shutdown)
+            ports.get(intId).shutdown();
+        else 
+            ports.get(intId).noshutdown();
+    }
 }
