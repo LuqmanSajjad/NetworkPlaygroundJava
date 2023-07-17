@@ -9,12 +9,10 @@ package networkplaygroundalpha;
  * @author jad
  */
 public class NetworkPlaygroundAlpha {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
+   
     
 }
